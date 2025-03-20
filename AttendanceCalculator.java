@@ -130,7 +130,7 @@ public class AttendanceCalculator extends JFrame {
 			int absent=absences.getOrDefault(subject,0);
 			
 			if(total!=0) {
-				int leave=(int)(total*0.75)-absent;
+				int leave=(int)(total*0.20)-absent;
 				if(leave<0) {
 					leave=0;
 					displayArea.append(subject+": You can't leave anymore classes\n");
